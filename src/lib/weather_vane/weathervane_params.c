@@ -39,13 +39,17 @@
  * @author Roman Bapst <roman@auterion.com>
  */
 
+/*(OSJ) This file, Parameter metadata specifies the default value for each
+parameter in firmware along with other metadata for presentation (and editing)
+of parameters in ground control stations and documentation. */
+
 /**
  * Enable weathervane.
  *
  * @boolean
  * @group Multicopter Position Control
  */
-PARAM_DEFINE_INT32(WV_EN, 0);
+PARAM_DEFINE_INT32(WV_EN, 0); //default 0
 
 /**
  * Weather-vane roll angle to yawrate.
@@ -59,7 +63,7 @@ PARAM_DEFINE_INT32(WV_EN, 0);
  * @decimal 3
  * @group VTOL Attitude Control
  */
-PARAM_DEFINE_FLOAT(WV_GAIN, 1.0f);
+PARAM_DEFINE_FLOAT(WV_GAIN, 1.0f); //default 1.0f
 
 /**
  * Minimum roll angle setpoint for weathervane controller to demand a yaw-rate.
@@ -69,7 +73,7 @@ PARAM_DEFINE_FLOAT(WV_GAIN, 1.0f);
  * @unit deg
  * @group Multicopter Position Control
  */
-PARAM_DEFINE_FLOAT(WV_ROLL_MIN, 1.0f);
+PARAM_DEFINE_FLOAT(WV_ROLL_MIN, 1.0f); //default 1.0f (more than 1deg rollthan )
 
 /**
  * Maximum yawrate the weathervane controller is allowed to demand.
@@ -79,4 +83,4 @@ PARAM_DEFINE_FLOAT(WV_ROLL_MIN, 1.0f);
  * @unit deg/s
  * @group Multicopter Position Control
  */
-PARAM_DEFINE_FLOAT(WV_YRATE_MAX, 90.0f);
+PARAM_DEFINE_FLOAT(WV_YRATE_MAX, 90.0f); //default 90.0f
