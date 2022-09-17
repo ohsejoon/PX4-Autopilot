@@ -120,7 +120,7 @@ public:
 	 *
 	 * @param euler euler angle instance
 	 */
-	Dcm(const Euler<Type> &euler)
+	Dcm(const Euler<Type> &euler) // (OSJ) in WeatherVane.cpp, phi=0, theta=0.0, psi=-heading
 	{
 		Dcm &dcm = *this;
 		Type cosPhi = Type(std::cos(euler.phi()));
