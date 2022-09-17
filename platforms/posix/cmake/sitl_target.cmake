@@ -189,6 +189,7 @@ set(worlds
 	warehouse
 	windy
 	yosemite
+	mywindy
 )
 
 set(all_posix_vmd_make_targets)
